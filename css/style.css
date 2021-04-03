@@ -25,13 +25,31 @@ h1 {
     }
 .title-h2 span {
     display: block;
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 19px;
+    letter-spacing: 3.5px;
     font-weight: 800;
     color:#1085e4;
     margin-bottom: 14px;
     text-transform: uppercase;
     letter-spacing: 3px;
-
+}
+.title-40 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    }
+.title-40 span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 19px;
+    letter-spacing: 3.5px;
+    font-weight: 800;
+    color:#1085e4;
+    text-transform: uppercase;
 }
 .page-stat .title-h2, .page-screen {
 text-align: center;
@@ -40,6 +58,12 @@ margin: 0 auto;
 .page-stat .title-h2 {
     max-width: 500px;
 }
+}
+.page-screen .title-h2 span {
+    font-size: 18px;
+    margin-bottom: 19px;
+    letter-spacing: 3.5px;
+    }
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
@@ -153,7 +177,71 @@ margin: 0 auto;
     letter-spacing: 0;
 }
 .screen {
-    margin-top: 30px;
+    margin-top: 36px;
+    margin-bottom: -7px;
+}
+.box-price {
+    display: flex;
+    justify-content: space-between;
+}
+.box-price-item {
+background-color: #f5faff;
+}
+.box-price-item-active {
+    background-color: #192b59;
+    color: #fff;
+    }
+.box-price-item ul {
+   list-style-type: none; 
+   padding-left: 0;
+}
+.box-price-item-active ul {
+    list-style-type: none; 
+    padding-left: 0;
+ }
+ .box-price-item ul {
+     font-size: 14px;
+     font-weight: 400;
+     color: #8085b1;
+     line-height: 2.9;
+ }
+ .box-price-item-active ul {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.9;
+}
+.box-price-item p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0084ff;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+.box-price-item-active p {
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+}
+.box-price-item h3 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #000958;
+}
+.box-price-item-active h3 {
+   font-size: 70px;
+   font-weight: 700;
+}
+.box-price-item-active span {
+   font-size: 20px;
+   font-weight: 700;
+}
+.box-price-item span {
+    font-size: 20px;
+    font-weight: 700;
+ }
+.span-blue {
+    color: #7b8ab2;
 }
 /*PAGE*/
 .page-stat, .page-screen {
@@ -162,7 +250,10 @@ margin: 0 auto;
 .page-stat {
         padding: 116px 0 96px 0;
 }
-.page-screen {
+.page-plan, .page-screen {
     padding: 116px 0 0 0;
     text-align: center;
+}
+.page-screen {
+    padding: 116px 0 0 0;
 }
