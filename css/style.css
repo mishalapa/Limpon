@@ -250,9 +250,13 @@ top: 189px;
 }
 .grid-item-3 {
     grid-area: d;
+    margin-left: -34px;
+    margin-top: -18px;
 }
 .grid-item-4 {
     grid-area: e;
+    margin-top: -29px;
+    margin-left: -32px;
 }
 .grid-item-5 {
     grid-area: f;
@@ -262,26 +266,53 @@ top: 189px;
 }
 .grid-text {
     grid-area: h;
+    margin: 0 0 -27px 55px;
+}
+.grid-text-p {
+    color: #1085e4;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+    font-weight: 600;
+}
+.grid-text p span {
+    color: #192b59;
+    font-size: 16px;
+    margin-left: 6px;
+    padding: 13px 0px 0px 0px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
 }
 .grid h2 {
-    color: #192b59; 
-    font-size: 40px;  
-    font-weight: 700; 
+    color: #192b59;
+    font-size: 40px;
+    font-weight: 700;
+    width: 260px;
+    letter-spacing: -1.2px;
+    line-height: 1.25;
 }
 .grid h2 span {
-    color: #1085e4; 
-    font-size: 14px;  
+    color: #1085e4;
+    font-size: 14px;
     display: block;
+    margin-bottom: 13px;
+    letter-spacing: 3px;
 }
 .grid-item {
     text-align: center;
-    box-shadow: 0 0 5px #f2f2f2 ;
+    box-shadow: 0 0 5px #f2f2f2;
+    padding: 94px 33px 61px 74px;
+    letter-spacing: -0.6px;
+    width: 273px;
 }
 .grid-item h3 {
     color: #192b59;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 18px;
+}
+.grid-item p {
+    letter-spacing: -0.06px;
+    margin-left: 9px;
 }
 .grid-item a {
     color: #1085e4;
@@ -516,4 +547,7 @@ background: -o-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 
 background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
 background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+}
+.page-grid {
+    margin: 83px 0 127px 0;
 }
