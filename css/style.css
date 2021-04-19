@@ -704,8 +704,9 @@ margin: 37px 0 -27px 0;
     justify-content: flex-start;
     align-items: center;
 }
-.box-info>div {
+    .box-info>div {
     padding-left: 20px;}
+    
     .box-team{
         display: flex;
         justify-content: space-between;
