@@ -705,35 +705,207 @@ margin: 37px 0 -27px 0;
     align-items: center;
 }
     .box-info>div {
-    padding-left: 20px;}
-    
+        padding-left: 20px;}
+
     .box-team{
         display: flex;
         justify-content: space-between;
-        margin: 86px 0 0px 0;}
-    }
+        margin: 139px 0 -88px 0;}
     .box-team-item {
         background-color: #fff;
-        flex-basis: 32%;
+        flex-basis: 31.5%;
         box-shadow: 0 5px 6px #f4f4f4;
+        position: relative;
+        padding: 176px 31px 42px 31px;
+        box-sizing: border-box;
     }
     .box-team-item .name{
         color: #192b59;
         font-size: 26px;
         font-weight: 600;
+        margin-top: 7px;
+        letter-spacing: -0.8px;
        }
-       .box-team-item .position{
-           color: #1a88e1;
-           font-size: 14px;
-           font-weight: 900;
-           text-transform: uppercase;}
-   
-/*PAGE*/
+    .box-team-item .position{
+        color: #1a88e1;
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        margin-top: 30px;
+        letter-spacing: 3.1px;}
+    .box-team-item .avatar{
+        position: absolute;
+        top: -86px;
+        left: 0;
+        right: 0;
+        margin: 0 auto; 
+          }
+    .box-team-item .btn-team{
+        background-color:#f3f3f3 ;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        margin: 0 auto;
+        border: none;
+        transition: 0.3s;
+    }
+    .box-team-item .btn-team:hover{
+        background-color: #1a88e1;
+    }
+    .box-team-item .btn-team span{
+        background-image: url(../img/btn-team.png);
+        background-repeat: no-repeat;
+        display: block;
+        margin: 0 auto;
+        align-self: center;
+    } 
+    .box-team-item .btn-more span{
+        background-position: -4px -2px;
+        width: 20px;
+        height: 21px;
+    } 
+    .box-team-item .btn-more:hover span{
+        background-position: -4px -25px;
+    }
+
+    .box-team-item .btn-more:focus{
+        outline: none;
+    }
+    .social-team{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+    .box-team-item .btn-fb span{
+        background-position: -38px 7px;
+        width: 26px;
+        height: 40px;
+    } 
+    .box-team-item .btn-fb:hover span{
+        background-position: -38px -19px;
+    }
+    .box-team-item .btn-tw span{
+        background-position: -78px 7px;
+        width: 20px;
+        height: 40px;
+    } 
+    .box-team-item .btn-tw:hover span{
+        background-position: -78px -19px;
+    }
+    .box-team-item .btn-be span{
+        background-position: -119px 7px;
+        width: 20px;
+        height: 40px;
+    } 
+    .box-team-item .btn-be:hover span{
+        background-position: -119px -19px;
+    }
+    .box-team-item .btn-web span{
+        background-position: -160px 7px;
+        width: 20px;
+        height: 40px;
+    } 
+    .box-team-item .btn-web:hover span{
+        background-position: -160px -19px;
+    }
+    .object-circle{
+        display: block;
+        background-image: url(../img/circle-gray.svg);
+        position: absolute;
+        left: 5px;
+        bottom: -380px;
+        width: 444px;
+        height: 773px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .object-rhombus{
+        display: block;
+        background-image: url(../img/rhombus-gray.svg);
+        position: absolute;
+        right: 21px;
+        top: -195px;
+        width: 595px;
+        height: 783px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .intro {
+        color: rgba(0,0,0,0.04);
+        font-size: 300px;
+        font-weight: 800;
+        line-height: 0;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        top: 40px;
+        margin: 0;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .contact-form input, .contact-form textarea{
+        font-size: 14px;
+        border: 2px solid #dce4ec;
+        padding: 15px 25px;
+        border-radius: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {color:#8995b3;}
+    .contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {color:#8995b3;}
+    .contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {color:#8995b3;}
+    .contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {color:#8995b3;}
+    .contact-form-item{
+        margin-bottom: 15px;
+        position: relative;
+    }
+    .contact-form-item::after{
+        content: '';
+        display: block;
+        right: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    .contact-form-name::after{
+        background-image: url(../img/icon-name.png);
+        width: 13px;
+        height: 15px;
+        top: calc(50% - 7px);
+    }
+    .contact-form-mail::after{
+        background-image: url(../img/icon-mail.png);
+        width: 14px;
+        height: 11px;
+        top: calc(50% - 7px);
+    }
+    .contact-form-text::after{
+        background-image: url(../img/icon-text.png);
+        width: 14px;
+        height: 15px;
+        top: calc(50% - 7px);
+    }
+    .flex-form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+    /*PAGE*/
 .page-stat, .page-screen {
     background-color: #edf6ff;
 }
 .page-stat {
         padding: 116px 0 96px 0;
+        position: relative;
 }
 .page-plan, .page-screen {
     padding: 83px 0 0 0;
@@ -818,5 +990,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
         background-image: url(../img/bg-team.png);
         background-position: center;
         background-repeat: no-repeat;
-        padding: 162px 0 0px 0;
+        padding: 204px 0 86px 0;
+    }
+    .page-form{
+        text-align: center;
+        background-image: url(../img/bg-form.png);
+        background-position: center;
+        background-repeat: no-repeat;
     }
